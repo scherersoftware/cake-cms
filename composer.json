@@ -1,0 +1,22 @@
+{
+    "name": "scherersoftware/cake-cms",
+    "description": "Block-based Content Management System for CakePHP 3",
+    "license": "MIT",
+    "type": "cakephp-plugin",
+    "extra": {
+        "installer-name": "Cms"
+    },
+    "require": {
+        "cakephp/plugin-installer": "*",
+        "codekanzlei/cake-cktools": "*",
+        "codekanzlei/cake-frontend-bridge": "*"
+    },
+    "require-dev": {
+        "cakephp/cakephp": "~3.0",
+    },
+    "autoload": {
+        "psr-4": {
+        "Cms\\": "src"
+        }
+    }
+}
