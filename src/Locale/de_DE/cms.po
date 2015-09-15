@@ -1,0 +1,143 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-09-04 15:03+0200\n"
+"PO-Revision-Date: 2015-09-04 15:04+0100\n"
+"Last-Translator: Felix Kempf <fk@codekanzlei.de>\n"
+"Language-Team: EMAIL@ADDRESS\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.6\n"
+
+#: /Users/cleptric/Sites/l4b_backend/Admin/menu.php:32
+msgid "cms.name"
+msgstr "CMS"
+
+#: /Users/cleptric/Sites/l4b_backend/Admin/menu.php:36
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/index.ctp:2;6
+msgid "cms_pages.index.title"
+msgstr "Übersicht"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Model/Table/CmsPagesTable.php:52;68
+msgid "validation.not_empty"
+msgstr "Dieses Feld ist ein Pflichtfeld"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Model/Table/CmsPagesTable.php:55
+msgid "cms_page.validation.slug_allowed_characters"
+msgstr "Es sind nur Buchstaben, Zahlen und / erlaubt."
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Model/Table/CmsPagesTable.php:63
+msgid "cms_page.validation.slug_double_slash"
+msgstr "Zwei / nacheinander sind nicht erlaubt."
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsBlocks/add.ctp:8
+msgid "cms_blocks.add.title"
+msgstr "Neuen Block anlegen"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsBlocks/add.ctp:14
+msgid "cms_block.widget"
+msgstr "Widget auswählen"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsBlocks/add.ctp:20
+msgid "cms_blocks.add.next"
+msgstr "Weiter"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsBlocks/edit.ctp:15
+msgid "cms_blocks.edit.title"
+msgstr "Block bearbeiten"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsBlocks/edit.ctp:24
+msgid "cms_blocks.save_block"
+msgstr "Block speichern"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/add.ctp:3;7
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/index.ctp:8
+msgid "cms_pages.add"
+msgstr "Neue Seite anlegen"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/add.ctp:15
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:38
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/index.ctp:16
+msgid "cms_page.name"
+msgstr "Seitenname"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/add.ctp:18
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:41
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/index.ctp:17
+msgid "cms_page.slug"
+msgstr "Eindeutige URL"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:10
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/index.ctp:27
+msgid "cms_pages.preview"
+msgstr "Vorschau"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:11
+msgid "cms_rows.add_row"
+msgstr "Neue Zeile anlegen"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:20
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsRows/form.ctp:6
+msgid "cms_row.layout"
+msgstr "Zeilen Layout"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:24
+msgid "cms_rows.delete_row"
+msgstr "Zeile löschen"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:26
+msgid "cms_rows.really_delete_row"
+msgstr "Wollen Sie diese Zeile wirklich löschen?"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:40
+msgid "cms_rows.add_block"
+msgstr "Neuen Block anlegen"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:4;8
+msgid "cms_pages.edit"
+msgstr "Seite editieren"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:16
+msgid "cms_pages.edit.design"
+msgstr "Layout editieren"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:19
+msgid "cms_pages.edit.data"
+msgstr "Metadaten editieren"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:44
+msgid "cms_page.description"
+msgstr "Kurzbeschreibung"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsRows/add.ctp:8
+msgid "cms_rows.add.title"
+msgstr "Zeile anlegen"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsRows/add.ctp:15
+msgid "cms_rows.save_row"
+msgstr "Zeile speichern"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/Element/Design/block_panel.ctp:7
+msgid "cms_pages.design.edit_block"
+msgstr "Block editieren"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/Element/Design/block_panel.ctp:11
+msgid "cms_pages.design.delete_block"
+msgstr "Block löschen"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/Element/Design/block_panel.ctp:12
+msgid "cms_pages.design.really_delete_block"
+msgstr "Wollen Sie diesen Block wirklich löschen?"
+
+#: /Users/cleptric/Sites/l4b_backend/Cms/Template/Element/Design/default_admin_form.ctp:19
+msgid "cms_blocks.no_admin_form_message"
+msgstr "Kein Element vorhanden"
+
+#~ msgid "cms_rows.design.title"
+#~ msgstr "Design"

@@ -1,0 +1,28 @@
+.cms-row .cms-row-head {
+    margin-bottom: 4px;
+}
+
+.cms-row {
+    padding: 10px 10px 0px 10px;
+    background-color: #f2f2f2;
+}
+
+.cms-row:hover {
+    cursor: move;
+}
+
+.cms-block-sortable.sortable-start {
+    min-height: 120px;
+    border: 1px dashed grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cms-block-sortable {
+    min-height: auto;
+}
+
+.cms-admin-block-panel img {
+    max-width: 100%;
+    height: auto;
+}
