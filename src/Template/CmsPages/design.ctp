@@ -7,7 +7,7 @@ $this->TinyMce->includeAssets();
 <br>
 <div class="clearfix">
     <div class="pull-right">
-         <?= $this->CkTools->button(__d('cms', 'cms_pages.preview'), ['plugin' => false, 'controller' => 'cms_pages', 'action' => 'preview', $cmsPage->id], ['icon' => 'eye', 'target' => '_blank']) ?>
+         <?= $this->CkTools->button(__d('cms', 'cms_pages.preview'), ['plugin' => 'Cms', 'controller' => 'CmsPages', 'action' => 'show', $cmsPage->id], ['icon' => 'eye', 'target' => '_blank']) ?>
         <div class="btn btn-default btn-xs" id="btn-add-row"><i class="fa fa-plus"></i> <?= __d('cms', 'cms_rows.add_row') ?></div>
     </div>
 </div>
