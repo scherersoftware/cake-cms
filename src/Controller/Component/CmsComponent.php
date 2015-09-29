@@ -22,14 +22,21 @@ class CmsComponent extends Component
     ];
 
     /**
-     * Fetch a CmsPage from the DB using its primary key
+     * Fetch a CmsPage from the DB using its primary key or by using the slug
      *
      * @param string $id Primary key
+     * @param boolean $bySlug Slug
      * @return CmsPage
      */
-    public function getPage($id)
+    public function getPage($id, $bySlug = false)
     {
         $CmsPagesTable = TableRegistry::get('Cms.CmsPages');
+        if ($bySlug) {
+            $pageId = $CmsPagesTable->findPageIdBySlug($id);
+        }
+        if (isset($pageId)) {
+            $id = $pageId;
+        }
         $page = $CmsPagesTable->getPage($id);
         $callback = $this->config('permissionsCallback');
         if ($callback && is_callable($callback)) {
