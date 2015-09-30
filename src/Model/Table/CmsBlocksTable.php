@@ -119,7 +119,13 @@ class CmsBlocksTable extends Table
         }
     }
 
-    public function getPage(CmsBlock $cmsBlock, $field = null)
+    /**
+     * get the page the given block is the grandchild of
+     *
+     * @param  CmsBlock $cmsBlock the cms block entity
+     * @return Cms\Model\Entity\CmsPage
+     */
+    public function getPage(CmsBlock $cmsBlock)
     {
         $block = $this->find()
             ->where([
@@ -131,9 +137,6 @@ class CmsBlocksTable extends Table
             ->first();
         $cmsPage = $block->cms_row->cms_page;
 
-        if (!empty($field) && !empty($cmsPage->$field)) {
-            return $cmsPage->$field;
-        }
         return $cmsPage;
     }
 }
