@@ -118,4 +118,22 @@ class CmsBlocksTable extends Table
             ]);
         }
     }
+
+    public function getPage(CmsBlock $cmsBlock, $field = null)
+    {
+        $block = $this->find()
+            ->where([
+                'CmsBlocks.id' => $cmsBlock->id
+            ])
+            ->contain([
+                'CmsRows' => ['CmsPages']
+            ])
+            ->first();
+        $cmsPage = $block->cms_row->cms_page;
+
+        if (!empty($field) && !empty($cmsPage->$field)) {
+            return $cmsPage->$field;
+        }
+        return $cmsPage;
+    }
 }
