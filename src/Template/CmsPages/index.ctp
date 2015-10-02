@@ -24,7 +24,11 @@ $this->assign('title', __d('cms', 'cms_pages.index.title'));
                     <td><?= h($cmsPage->name) ?></td>
                     <td><?= h($cmsPage->slug) ?></td>
                     <td>
-                        <?= $this->CkTools->button(__d('cms', 'cms_pages.preview'), ['plugin' => false, 'controller' => 'cms_pages', 'action' => 'preview', $cmsPage->id], ['icon' => 'eye', 'target' => '_blank']) ?>
+                        <?php
+                            $previewUrlTemp = $previewUrl;
+                            $previewUrlTemp[] = $cmsPage->id;
+                        ?>
+                        <?= $this->CkTools->button(__d('cms', 'cms_pages.preview'), $previewUrlTemp, ['icon' => 'eye', 'target' => '_blank']) ?>
                         <?= $this->CkTools->editButton($cmsPage) ?>
                     </td>
                 </tr>

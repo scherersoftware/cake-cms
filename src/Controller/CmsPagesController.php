@@ -20,7 +20,8 @@ class CmsPagesController extends AppController
     public function index()
     {
         $cmsPages = $this->paginate($this->CmsPages);
-        $this->set(compact('cmsPages'));
+        $previewUrl = Configure::read('Cms.Frontend.renderAction');
+        $this->set(compact('cmsPages', 'previewUrl'));
     }
 
     /**
@@ -52,6 +53,8 @@ class CmsPagesController extends AppController
     public function edit($id = null)
     {
         $cmsPage = $this->CmsPages->getPage($id);
+        $previewUrl = Configure::read('Cms.Frontend.renderAction');
+        $previewUrl[] = $id;
 
         if ($this->request->is(['patch', 'post', 'put'])) {
             $cmsPage = $this->CmsPages->patchEntity($cmsPage, $this->request->data);
@@ -63,7 +66,7 @@ class CmsPagesController extends AppController
         }
         $this->FrontendBridge->setJson('confirmMessage', __d('cms', 'cms_pages.design.really_delete_block'));
         $this->FrontendBridge->setJson('pageId', $cmsPage->id);
-        $this->set(compact('cmsPage'));
+        $this->set(compact('cmsPage', 'previewUrl'));
     }
 
     /**
