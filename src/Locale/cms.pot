@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-09-08 09:53+0200\n"
+"POT-Creation-Date: 2015-10-02 12:34+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,127 +14,122 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: /Users/cleptric/Sites/l4b_backend/Admin/menu.php:32
-msgid "cms.name"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Admin/menu.php:36
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/index.ctp:2;6
-msgid "cms_pages.index.title"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Model/Table/CmsPagesTable.php:52;68
-msgid "validation.not_empty"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Model/Table/CmsPagesTable.php:55
-msgid "cms_page.validation.slug_allowed_characters"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Model/Table/CmsPagesTable.php:63
-msgid "cms_page.validation.slug_double_slash"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsBlocks/add.ctp:8
-msgid "cms_blocks.add.title"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsBlocks/add.ctp:14
-msgid "cms_block.widget"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsBlocks/add.ctp:20
-msgid "cms_blocks.add.next"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsBlocks/edit.ctp:15
-msgid "cms_blocks.edit.title"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsBlocks/edit.ctp:24
-msgid "cms_blocks.save_block"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/add.ctp:3;7
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/index.ctp:8
-msgid "cms_pages.add"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/add.ctp:15
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:38
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/index.ctp:16
-msgid "cms_page.name"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/add.ctp:18
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:41
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/index.ctp:17
-msgid "cms_page.slug"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:10
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/index.ctp:27
-msgid "cms_pages.preview"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:11
-msgid "cms_rows.add_row"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:20
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsRows/form.ctp:6
-msgid "cms_row.layout"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:24
-msgid "cms_rows.delete_row"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:26
-msgid "cms_rows.really_delete_row"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/design.ctp:40
-msgid "cms_rows.add_block"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:4;8
-msgid "cms_pages.edit"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:16
-msgid "cms_pages.edit.design"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:19
-msgid "cms_pages.edit.data"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsPages/edit.ctp:44
-msgid "cms_page.description"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsRows/add.ctp:8
-msgid "cms_rows.add.title"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/CmsRows/add.ctp:15
-msgid "cms_rows.save_row"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/Element/Design/block_panel.ctp:7
-msgid "cms_pages.design.edit_block"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/Element/Design/block_panel.ctp:11
-msgid "cms_pages.design.delete_block"
-msgstr ""
-
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/Element/Design/block_panel.ctp:12
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Controller/CmsPagesController.php:67
 msgid "cms_pages.design.really_delete_block"
 msgstr ""
 
-#: /Users/cleptric/Sites/l4b_backend/Cms/Template/Element/Design/default_admin_form.ctp:19
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Model/Table/CmsPagesTable.php:52;68
+msgid "validation.not_empty"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Model/Table/CmsPagesTable.php:55
+msgid "cms_page.validation.slug_allowed_characters"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Model/Table/CmsPagesTable.php:63
+msgid "cms_page.validation.slug_double_slash"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsBlocks/add.ctp:8
+msgid "cms_blocks.add.title"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsBlocks/add.ctp:14
+msgid "cms_block.widget"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsBlocks/add.ctp:20
+msgid "cms_blocks.add.next"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsBlocks/edit.ctp:15
+msgid "cms_blocks.edit.title"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsBlocks/edit.ctp:24
+msgid "cms_blocks.save_block"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/add.ctp:3;7
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/index.ctp:8
+msgid "cms_pages.add"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/add.ctp:15
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/edit.ctp:38
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/index.ctp:16
+msgid "cms_page.name"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/add.ctp:18
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/edit.ctp:41
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/index.ctp:17
+msgid "cms_page.slug"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/design.ctp:10
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/index.ctp:31
+msgid "cms_pages.preview"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/design.ctp:11
+msgid "cms_rows.add_row"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/design.ctp:20
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsRows/form.ctp:6
+msgid "cms_row.layout"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/design.ctp:24
+msgid "cms_rows.delete_row"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/design.ctp:26
+msgid "cms_rows.really_delete_row"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/design.ctp:40
+msgid "cms_rows.add_block"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/edit.ctp:4;8
+msgid "cms_pages.edit"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/edit.ctp:16
+msgid "cms_pages.edit.design"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/edit.ctp:19
+msgid "cms_pages.edit.data"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/edit.ctp:44
+msgid "cms_page.description"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsPages/index.ctp:2;6
+msgid "cms_pages.index.title"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsRows/add.ctp:8
+msgid "cms_rows.add.title"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/CmsRows/add.ctp:15
+msgid "cms_rows.save_row"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/Element/Design/block_panel.ctp:7
+msgid "cms_pages.design.edit_block"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/Element/Design/block_panel.ctp:11
+msgid "cms_pages.design.delete_block"
+msgstr ""
+
+#: /Users/flix/Sites/codekanzlei/l4b_backend/Template/Element/Design/default_admin_form.ctp:19
 msgid "cms_blocks.no_admin_form_message"
 msgstr ""
 
