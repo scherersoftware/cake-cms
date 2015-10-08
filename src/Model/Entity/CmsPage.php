@@ -2,8 +2,10 @@
 namespace Cms\Model\Entity;
 
 use Cake\Collection\Collection;
+use Cake\Core\Configure;
 use Cake\Datasource\Exception\RecordNotFoundException;
 use Cake\ORM\Entity;
+use Exception;
 
 /**
  * CmsPage Entity.
@@ -51,5 +53,36 @@ class CmsPage extends Entity
             }
         }
         throw new RecordNotFoundException("Row with id {$id} wasn't found in this CmsPage entity");
+    }
+
+    /**
+     * Merges the configured, available attributes with data from the page_attributes
+     * field.
+     *
+     * @return array
+     */
+    public function getAttributes()
+    {
+        $attributesConfig = Configure::read('Cms.Pages.attributes');
+        foreach ($attributesConfig as $attribute => $attributeConfig) {
+            $attributesConfig[$attribute]['value'] = isset($this->page_attributes[$attribute]) ? $this->page_attributes[$attribute] : $attributeConfig['default'];
+        }
+        return $attributesConfig;
+    }
+
+    /**
+     * Returns the value of the given page attribute. Will return the configured
+     * default value if no value is present.
+     *
+     * @param string $attribute Attribute Field Name
+     * @return mixed
+     */
+    public function getAttribute($attribute)
+    {
+        $attributes = $this->getAttributes();
+        if (!isset($attributes[$attribute])) {
+            throw new Exception("Attribute {$attribute} is not configured.");
+        }
+        return $attributes[$attribute]['value'];
     }
 }

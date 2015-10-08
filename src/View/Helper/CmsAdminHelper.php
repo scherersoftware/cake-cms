@@ -17,7 +17,7 @@ use Cms\Widget\WidgetManager;
 class CmsAdminHelper extends Helper
 {
 
-    public $helpers = ['Html'];
+    public $helpers = ['Html', 'Form'];
 
     /**
      * Default configuration.
@@ -102,5 +102,37 @@ class CmsAdminHelper extends Helper
             'block' => $block
         ], $widget->viewVars);
         return $this->_View->element($adminFormElement, $viewVars);
+    }
+
+    /**
+     * Renders an input for a given Page Attribute
+     *
+     * @param string $attribute Attribute name
+     * @param array $attributeConfig Attribute Configuration
+     * @return string Rendered HTML
+     */
+    public function renderPageAttributeInput($attribute, array $attributeConfig)
+    {
+        $options = [
+            'label' => $attributeConfig['label']
+        ];
+
+        $value = $attributeConfig['value'];
+        $label = $attributeConfig['label'];
+        $type = 'text';
+
+        switch ($attributeConfig['type']) {
+            case 'boolean':
+                $type = 'checkbox';
+                $value = 1;
+                $options['checked'] = $attributeConfig['value'];
+                break;
+        }
+
+        $options['type'] = $type;
+        $options['value'] = $value;
+        $options['label'] = $label;
+
+        return $this->Form->input('page_attributes.' . $attribute, $options);
     }
 }

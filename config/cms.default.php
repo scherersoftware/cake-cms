@@ -19,6 +19,9 @@ return [
             // widgets in this list won't be offered to users when creating blocks
             'excludedWidgets' => []
         ],
+        'Pages' => [
+            'attributes' => []
+        ],
         'Design' => [
             'rowLayouts' => [
                 '4-4-4',

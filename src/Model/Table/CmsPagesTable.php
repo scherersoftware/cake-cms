@@ -33,6 +33,8 @@ class CmsPagesTable extends Table
             'foreignKey' => 'cms_page_id',
             'className' => 'Cms.CmsRows'
         ]);
+
+        $this->schema()->columnType('page_attributes', 'json');
     }
 
     /**

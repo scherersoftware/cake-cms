@@ -31,3 +31,33 @@ Configure a route for the frontend rendering of CMS pages (use this example and 
 
     $routes->connect('/:slug', Configure::read('Cms.Frontend.renderAction'), ['routeClass' => 'Cms.SlugRoute']);
 
+## Using Page Attributes
+
+It is possible to define arbitrary page attributes to save additional data for a CMS page without having to modify the CMS schema. Data will be saved as JSON in the `cms_pages.page_attributes` field.
+
+The CMS will look in the `Pages.attributes` path of your CMS configuration. Configuration looks like this:
+
+    'Pages' => [
+        'attributes' => [
+            'public' => [
+                'type' => 'boolean',
+                'label' => 'Publicly Available',
+                'default' => true
+            ],
+            'keywords' => [
+                'type' => 'text',
+                'label' => 'Keywords',
+                'default' => ''
+            ]
+        ]
+    ]
+
+Based on this configuration, input fields will be rendered in a separate "Attributes" tab in the edit screen. Attributes can later be fetched using eiher `CmsPage::getAttributes()` or `CmsPage::getAttribute($attribute)`.
+
+Example:
+
+        $this->loadComponent('Cms.Cms', [
+            'permissionsCallback' => function (CmsPage $page) use ($controller) {
+                return $page->getAttribute('public');
+            }
+        ]);

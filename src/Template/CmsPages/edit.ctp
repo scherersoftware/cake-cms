@@ -18,6 +18,9 @@
     <li>
         <a href="#page-data" data-toggle="tab"><?= __d('cms', 'cms_pages.edit.data') ?></a>
     </li>
+    <li>
+        <a href="#page-attributes" data-toggle="tab"><?= __d('cms', 'cms_pages.edit.attributes') ?></a>
+    </li>
 </ul>
 <div class="tab-content tab-content-bordered">
     <div class="tab-pane" id="page-design">
@@ -43,11 +46,31 @@
         <?= $this->Form->input('description', [
             'label' => __d('cms', 'cms_page.description')
         ]) ?>
-
-
         <?= $this->CkTools->formButtons() ?>
+        <?= $this->Form->end() ?>
+    </div>
+    <div class="tab-pane" id="page-attributes">
+        <?= $this->Form->create($cmsPage, [
+            'align' => 'horizontal',
+            'url' => [
+                'action' => 'edit',
+                $cmsPage->id,
+                '#' => 'page-attributes'
+            ]
+        ]) ?>
+                
+        <?php
+        echo $this->Form->input('kilian', [
+            'type' => 'checkbox',
+            'value' => true
+        ])
+        ?>
 
-
+                
+        <?php foreach ($cmsPage->getAttributes() as $attribute => $attributeConfig): ?>
+            <?= $this->CmsAdmin->renderPageAttributeInput($attribute, $attributeConfig) ?>
+        <?php endforeach; ?>
+        <?= $this->CkTools->formButtons() ?>
         <?= $this->Form->end() ?>
     </div>
 </div>
