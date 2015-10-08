@@ -58,15 +58,7 @@
                 '#' => 'page-attributes'
             ]
         ]) ?>
-                
-        <?php
-        echo $this->Form->input('kilian', [
-            'type' => 'checkbox',
-            'value' => true
-        ])
-        ?>
 
-                
         <?php foreach ($cmsPage->getAttributes() as $attribute => $attributeConfig): ?>
             <?= $this->CmsAdmin->renderPageAttributeInput($attribute, $attributeConfig) ?>
         <?php endforeach; ?>
