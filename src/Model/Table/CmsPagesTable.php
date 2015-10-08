@@ -53,7 +53,7 @@ class CmsPagesTable extends Table
             ->requirePresence('slug', 'create')
             ->notEmpty('slug', __d('cms', 'validation.not_empty'))
             ->add('slug', 'custom_characters', [
-                'rule' => ['custom', '/^([a-z0-9\-_\/]+)$/i'],
+                'rule' => ['custom', '/^[^\/]([a-z0-9\-_\/]+)$/i'],
                 'message' => __d('cms', 'cms_page.validation.slug_allowed_characters')
             ]);
 
