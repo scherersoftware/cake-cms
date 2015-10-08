@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-10-02 12:34+0200\n"
+"POT-Creation-Date: 2015-10-08 09:53+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,38 +14,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Controller/CmsBlocksController.php:35;61
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Controller/CmsPagesController.php:42;64
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Controller/CmsRowsController.php:27
+#: Controller/CmsBlocksController.php:35;61
+#: Controller/CmsPagesController.php:42;64
+#: Controller/CmsRowsController.php:27
 msgid "forms.data_not_saved"
 msgstr ""
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Controller/CmsPagesController.php:39;62
+#: Controller/CmsPagesController.php:39;62
 msgid "forms.data_saved"
 msgstr ""
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_form.ctp:2
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_preview.ctp:11
+#: Widget/Image/Template/admin_form.ctp:2
+#: Widget/Image/Template/admin_preview.ctp:11
 msgid "cms.image"
 msgstr ""
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_form.ctp:11
+#: Widget/Image/Template/admin_form.ctp:11
 msgid "cms.layout"
 msgstr ""
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_form.ctp:17
+#: Widget/Image/Template/admin_form.ctp:17
 msgid "cms.height"
 msgstr ""
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_form.ctp:23
+#: Widget/Image/Template/admin_form.ctp:23
 msgid "cms.width"
 msgstr ""
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_form.ctp:29
+#: Widget/Image/Template/admin_form.ctp:29
 msgid "cms.glide_proportionally_resize_info"
 msgstr ""
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_preview.ctp:11
+#: Widget/Image/Template/admin_preview.ctp:11
 msgid "block_data.layout"
 msgstr ""
 
