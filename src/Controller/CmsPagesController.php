@@ -9,7 +9,8 @@ class CmsPagesController extends AppController
 {
 
     public $paginate = [
-        'limit' => 50
+        'limit' => 50,
+        'order' => ['CmsPages.name' => 'ASC']
     ];
 
     /**
