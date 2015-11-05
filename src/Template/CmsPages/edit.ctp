@@ -60,7 +60,7 @@
         ]) ?>
 
         <?php foreach ($cmsPage->getAttributes() as $attribute => $attributeConfig): ?>
-            <?= $this->CmsAdmin->renderPageAttributeInput($attribute, $attributeConfig) ?>
+            <?= $this->CmsAdmin->renderPageAttributeInput($attribute, $attributeConfig) ?><br>
         <?php endforeach; ?>
         <?= $this->CkTools->formButtons() ?>
         <?= $this->Form->end() ?>
