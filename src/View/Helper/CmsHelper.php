@@ -50,6 +50,30 @@ class CmsHelper extends Helper
     }
 
     /**
+     * Render a modal cms page with trigger button
+     *
+     * @param CmsPage $modalPage Page Entity
+     * @param sting $linkText Link text
+     * @param array $linkOptions Link options
+     * @return string Rendered Html
+     */
+    public function addModal(CmsPage $modalPage, $linkText = null, $linkOptions = [])
+    {
+        $linkOptions = Hash::merge([
+            'class' => 'fa fa-info-circle icon-button',
+        ], $linkOptions);
+
+        $linkOptions['data-target'] = '#cms-modal-' . $modalPage->id;
+        $linkOptions['data-toggle'] = 'modal';
+
+        return $this->_View->element('Cms.CmsPages/modal', [
+            'modalPage' => $modalPage,
+            'linkText' => $linkText,
+            'linkOptions' => $linkOptions
+        ]);
+    }
+
+    /**
      * Include necessary cms assets. This has to be called after the page has been rendered.
      * Best place is in the layout.
      *
