@@ -8,6 +8,9 @@ App.Components.CmsComponent = Frontend.Component.extend({
         if (cmsData.widgets) {
             for (var uniqueId in cmsData.widgets) {
                 widgetData = cmsData.widgets[uniqueId];
+                if (typeof widgetData !== 'object') {
+                    continue;
+                }
                 className = widgetData.identifier.split('.')[1] + 'WidgetController';
                 if (Cms.WidgetControllers[className]) {
                     this._widgetControllers[uniqueId] = new Cms.WidgetControllers[className](uniqueId, widgetData);
