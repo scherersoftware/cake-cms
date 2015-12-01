@@ -305,6 +305,16 @@ abstract class AbstractWidget
     }
 
     /**
+     * Gets the class for the widget type for type based style adjustments.
+     *
+     * @return string
+     */
+    public function getDomClass()
+    {
+        return strtolower($this->_identifier);
+    }
+
+    /**
      * Executed before rendering the admin preview of the widget. Can be used to set
      * view vars for the admin_preview template.
      *
