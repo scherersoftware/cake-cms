@@ -38,6 +38,7 @@ class CmsBlocksTable extends Table
             'columnScope' => ['cms_row_id', 'column_index'],
             'defaultOrder' => ['position' => 'ASC']
         ]);
+        $this->addBehavior('Attachments.Attachments');
         $this->belongsTo('CmsRows', [
             'foreignKey' => 'cms_row_id',
             'className' => 'Cms.CmsRows'
