@@ -1,5 +1,7 @@
 # cake-cms
 
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
+
 Block-based Content Management System for CakePHP 3
 
 ## Installation
