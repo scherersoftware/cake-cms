@@ -5,7 +5,7 @@ App.Components.CmsComponent = Frontend.Component.extend({
     initWidgets: function() {
         var cmsData = this.Controller.getVar('Cms');
         var widgetData, className;
-        if (cmsData.widgets) {
+        if (cmsData && cmsData.widgets) {
             for (var uniqueId in cmsData.widgets) {
                 widgetData = cmsData.widgets[uniqueId];
                 if (typeof widgetData !== 'object') {
