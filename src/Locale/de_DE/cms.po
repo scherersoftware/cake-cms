@@ -4,137 +4,147 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-10-08 09:53+0200\n"
-"PO-Revision-Date: 2015-11-25 13:10+0100\n"
-"Last-Translator: Felix Kempf <fk@codekanzlei.de>\n"
+"POT-Creation-Date: 2016-08-24 17:42+0200\n"
+"PO-Revision-Date: 2016-08-24 17:42+0200\n"
 "Language-Team: EMAIL@ADDRESS\n"
-"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.5\n"
+"Last-Translator: \n"
+"Language: de\n"
 
-#: Controller/CmsPagesController.php:67
+#: Controller/CmsPagesController.php:68
 msgid "cms_pages.design.really_delete_block"
-msgstr "Wollen Sie diesen Block wirklich löschen?"
+msgstr ""
 
 #: Model/Table/CmsPagesTable.php:54;70
 msgid "validation.not_empty"
-msgstr "Dieses Feld ist ein Pflichtfeld"
+msgstr ""
 
 #: Model/Table/CmsPagesTable.php:57
 msgid "cms_page.validation.slug_allowed_characters"
-msgstr "Es sind nur Buchstaben, Zahlen und / erlaubt."
+msgstr ""
 
 #: Model/Table/CmsPagesTable.php:65
 msgid "cms_page.validation.slug_double_slash"
-msgstr "Zwei / nacheinander sind nicht erlaubt."
+msgstr ""
 
 #: Template/CmsBlocks/add.ctp:8
 msgid "cms_blocks.add.title"
-msgstr "Neuen Block anlegen"
+msgstr ""
 
 #: Template/CmsBlocks/add.ctp:14
 msgid "cms_block.widget"
-msgstr "Widget auswählen"
+msgstr ""
 
 #: Template/CmsBlocks/add.ctp:20
 msgid "cms_blocks.add.next"
-msgstr "Weiter"
+msgstr ""
 
-#: Template/CmsBlocks/edit.ctp:15
+#: Template/CmsBlocks/edit.ctp:14
 msgid "cms_blocks.edit.title"
-msgstr "Block bearbeiten"
+msgstr ""
 
 #: Template/CmsBlocks/edit.ctp:24
 msgid "cms_blocks.save_block"
-msgstr "Block speichern"
+msgstr ""
 
 #: Template/CmsPages/add.ctp:3;7 Template/CmsPages/index.ctp:8
 msgid "cms_pages.add"
-msgstr "Neue Seite anlegen"
+msgstr ""
 
 #: Template/CmsPages/add.ctp:15 Template/CmsPages/edit.ctp:41
 #: Template/CmsPages/index.ctp:16
 msgid "cms_page.name"
-msgstr "Seitenname"
+msgstr ""
 
 #: Template/CmsPages/add.ctp:18 Template/CmsPages/edit.ctp:44
 #: Template/CmsPages/index.ctp:17
 msgid "cms_page.slug"
-msgstr "Eindeutige URL"
+msgstr ""
 
 #: Template/CmsPages/design.ctp:10 Template/CmsPages/index.ctp:31
 msgid "cms_pages.preview"
-msgstr "Vorschau"
+msgstr ""
 
 #: Template/CmsPages/design.ctp:11
 msgid "cms_rows.add_row"
-msgstr "Neue Zeile anlegen"
+msgstr ""
 
 #: Template/CmsPages/design.ctp:20 Template/CmsRows/form.ctp:6
 msgid "cms_row.layout"
-msgstr "Zeilen Layout"
+msgstr ""
 
 #: Template/CmsPages/design.ctp:24
 msgid "cms_rows.delete_row"
-msgstr "Zeile löschen"
+msgstr ""
 
 #: Template/CmsPages/design.ctp:26
 msgid "cms_rows.really_delete_row"
-msgstr "Wollen Sie diese Zeile wirklich löschen?"
+msgstr ""
 
 #: Template/CmsPages/design.ctp:40
 msgid "cms_rows.add_block"
-msgstr "Neuen Block anlegen"
+msgstr ""
 
 #: Template/CmsPages/edit.ctp:4;8
 msgid "cms_pages.edit"
-msgstr "Seite editieren"
+msgstr ""
 
 #: Template/CmsPages/edit.ctp:16
 msgid "cms_pages.edit.design"
-msgstr "Layout editieren"
+msgstr ""
 
 #: Template/CmsPages/edit.ctp:19
 msgid "cms_pages.edit.data"
-msgstr "Metadaten editieren"
+msgstr ""
 
 #: Template/CmsPages/edit.ctp:22
 msgid "cms_pages.edit.attributes"
-msgstr "Attribute editieren"
+msgstr ""
 
 #: Template/CmsPages/edit.ctp:47
 msgid "cms_page.description"
-msgstr "Kurzbeschreibung"
+msgstr ""
 
 #: Template/CmsPages/index.ctp:2;6
 msgid "cms_pages.index.title"
-msgstr "Übersicht"
+msgstr ""
 
 #: Template/CmsRows/add.ctp:8
 msgid "cms_rows.add.title"
-msgstr "Zeile anlegen"
+msgstr ""
 
 #: Template/CmsRows/add.ctp:15
 msgid "cms_rows.save_row"
-msgstr "Zeile speichern"
+msgstr ""
+
+#: Template/Element/CmsBlocks/animation_selector.ctp:22
+msgid "animations"
+msgstr "Animationen"
+
+#: Template/Element/CmsBlocks/animation_selector.ctp:29
+msgid "animate_once"
+msgstr ""
+
+#: Template/Element/CmsBlocks/animation_selector.ctp:34
+msgid "animation_speed"
+msgstr ""
+
+#: Template/Element/CmsBlocks/animation_selector.ctp:45
+msgid "animation_delay"
+msgstr ""
 
 #: Template/Element/Design/block_panel.ctp:7
 msgid "cms_pages.design.edit_block"
-msgstr "Block editieren"
+msgstr ""
 
 #: Template/Element/Design/block_panel.ctp:11
 msgid "cms_pages.design.delete_block"
-msgstr "Block löschen"
+msgstr ""
 
 #: Template/Element/Design/default_admin_form.ctp:19
 msgid "cms_blocks.no_admin_form_message"
-msgstr "Dieses Widget bietet keine Einstellungsmöglichkeiten."
-
-#~ msgid "cms.name"
-#~ msgstr "CMS"
-
-#~ msgid "cms_rows.design.title"
-#~ msgstr "Design"
+msgstr ""

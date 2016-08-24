@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-10-08 09:53+0200\n"
+"POT-Creation-Date: 2016-08-24 17:41+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: Controller/CmsPagesController.php:67
+#: Controller/CmsPagesController.php:68
 msgid "cms_pages.design.really_delete_block"
 msgstr ""
 
@@ -42,7 +42,7 @@ msgstr ""
 msgid "cms_blocks.add.next"
 msgstr ""
 
-#: Template/CmsBlocks/edit.ctp:15
+#: Template/CmsBlocks/edit.ctp:14
 msgid "cms_blocks.edit.title"
 msgstr ""
 
@@ -123,6 +123,22 @@ msgstr ""
 
 #: Template/CmsRows/add.ctp:15
 msgid "cms_rows.save_row"
+msgstr ""
+
+#: Template/Element/CmsBlocks/animation_selector.ctp:22
+msgid "animations"
+msgstr ""
+
+#: Template/Element/CmsBlocks/animation_selector.ctp:29
+msgid "animate_once"
+msgstr ""
+
+#: Template/Element/CmsBlocks/animation_selector.ctp:34
+msgid "animation_speed"
+msgstr ""
+
+#: Template/Element/CmsBlocks/animation_selector.ctp:45
+msgid "animation_delay"
 msgstr ""
 
 #: Template/Element/Design/block_panel.ctp:7
