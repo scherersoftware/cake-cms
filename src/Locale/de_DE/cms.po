@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2016-08-24 17:42+0200\n"
-"PO-Revision-Date: 2016-08-24 17:42+0200\n"
+"PO-Revision-Date: 2016-08-24 18:02+0200\n"
 "Language-Team: EMAIL@ADDRESS\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: Controller/CmsPagesController.php:68
 msgid "cms_pages.design.really_delete_block"
-msgstr ""
+msgstr "Wollen Sie diesen Block wirklich löschen?"
 
 #: Model/Table/CmsPagesTable.php:54;70
 msgid "validation.not_empty"
@@ -49,77 +49,77 @@ msgstr ""
 
 #: Template/CmsBlocks/edit.ctp:24
 msgid "cms_blocks.save_block"
-msgstr ""
+msgstr "speichern"
 
 #: Template/CmsPages/add.ctp:3;7 Template/CmsPages/index.ctp:8
 msgid "cms_pages.add"
-msgstr ""
+msgstr "Hinzufügen"
 
 #: Template/CmsPages/add.ctp:15 Template/CmsPages/edit.ctp:41
 #: Template/CmsPages/index.ctp:16
 msgid "cms_page.name"
-msgstr ""
+msgstr "Name"
 
 #: Template/CmsPages/add.ctp:18 Template/CmsPages/edit.ctp:44
 #: Template/CmsPages/index.ctp:17
 msgid "cms_page.slug"
-msgstr ""
+msgstr "Slug"
 
 #: Template/CmsPages/design.ctp:10 Template/CmsPages/index.ctp:31
 msgid "cms_pages.preview"
-msgstr ""
+msgstr "Vorschau"
 
 #: Template/CmsPages/design.ctp:11
 msgid "cms_rows.add_row"
-msgstr ""
+msgstr "Zeile hinzufügen"
 
 #: Template/CmsPages/design.ctp:20 Template/CmsRows/form.ctp:6
 msgid "cms_row.layout"
-msgstr ""
+msgstr "Layout"
 
 #: Template/CmsPages/design.ctp:24
 msgid "cms_rows.delete_row"
-msgstr ""
+msgstr "Zeile löschen"
 
 #: Template/CmsPages/design.ctp:26
 msgid "cms_rows.really_delete_row"
-msgstr ""
+msgstr "Wollen Sie diese Zeile wirklich löschen"
 
 #: Template/CmsPages/design.ctp:40
 msgid "cms_rows.add_block"
-msgstr ""
+msgstr "Block hinzufügen"
 
 #: Template/CmsPages/edit.ctp:4;8
 msgid "cms_pages.edit"
-msgstr ""
+msgstr "Bearbeiten"
 
 #: Template/CmsPages/edit.ctp:16
 msgid "cms_pages.edit.design"
-msgstr ""
+msgstr "Design"
 
 #: Template/CmsPages/edit.ctp:19
 msgid "cms_pages.edit.data"
-msgstr ""
+msgstr "Daten"
 
 #: Template/CmsPages/edit.ctp:22
 msgid "cms_pages.edit.attributes"
-msgstr ""
+msgstr "Eigenschaften"
 
 #: Template/CmsPages/edit.ctp:47
 msgid "cms_page.description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: Template/CmsPages/index.ctp:2;6
 msgid "cms_pages.index.title"
-msgstr ""
+msgstr "Titel"
 
 #: Template/CmsRows/add.ctp:8
 msgid "cms_rows.add.title"
-msgstr ""
+msgstr "Titel"
 
 #: Template/CmsRows/add.ctp:15
 msgid "cms_rows.save_row"
-msgstr ""
+msgstr "Zeile speichern"
 
 #: Template/Element/CmsBlocks/animation_selector.ctp:22
 msgid "animations"
@@ -127,23 +127,23 @@ msgstr "Animationen"
 
 #: Template/Element/CmsBlocks/animation_selector.ctp:29
 msgid "animate_once"
-msgstr ""
+msgstr "einmalig animieren"
 
 #: Template/Element/CmsBlocks/animation_selector.ctp:34
 msgid "animation_speed"
-msgstr ""
+msgstr "Animationsgeschwindigkeit"
 
 #: Template/Element/CmsBlocks/animation_selector.ctp:45
 msgid "animation_delay"
-msgstr ""
+msgstr "Animationsverzögerung"
 
 #: Template/Element/Design/block_panel.ctp:7
 msgid "cms_pages.design.edit_block"
-msgstr ""
+msgstr "Bearbeiten"
 
 #: Template/Element/Design/block_panel.ctp:11
 msgid "cms_pages.design.delete_block"
-msgstr ""
+msgstr "Block löschen"
 
 #: Template/Element/Design/default_admin_form.ctp:19
 msgid "cms_blocks.no_admin_form_message"
