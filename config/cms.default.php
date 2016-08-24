@@ -31,6 +31,45 @@ return [
                 '12',
                 '2-2-2-2-2-2'
             ]
-        ]
+        ],
+        // *
+        // * You can use the following options for BlockAnimations Array
+        // * e.g. 'bounceIn' => 'Bounce in', where 'Bounce in' is arbitrary
+        //
+        // bounceIn
+        // bounceInDown
+        // bounceInRight
+        // bounceInUp
+        // bounceInLeft
+        // fadeInDownShort
+        // fadeInUpShort
+        // fadeInLeftShort
+        // fadeInRightShort
+        // fadeInDown
+        // fadeInUp
+        // fadeInLeft
+        // fadeInRight
+        // fadeIn
+        // growIn
+        // shake
+        // shakeUp
+        // rotateIn
+        // rotateInUpLeft
+        // rotateInDownLeft
+        // rotateInUpRight
+        // rotateInDownRight
+        // rollIn
+        // wiggle
+        // swing
+        // tada
+        // wobble
+        // pulse
+        // lightSpeedInRight
+        // lightSpeedInLeft
+        // flip
+        // flipInX
+        // flipInY
+        //
+        'BlockAnimations' => false
     ]
 ];

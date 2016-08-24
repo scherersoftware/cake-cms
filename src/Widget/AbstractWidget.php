@@ -315,6 +315,31 @@ abstract class AbstractWidget
     }
 
     /**
+     * Gets the animation type, speed and delay for the widget animation.
+     *
+     * @return string
+     */
+    public function getDomAnimationClasses()
+    {
+        $classes = 'animated ';
+        if(!empty($this->viewVars['block']->block_data['animation'])) {
+            $classes .= $this->viewVars['block']->block_data['animation'];
+            $classes .= ' ';
+        }
+
+        if(!empty($this->viewVars['block']->block_data['animation_speed'])) {
+            $classes .= $this->viewVars['block']->block_data['animation_speed'];
+            $classes .= ' ';
+        }
+
+        if(!empty($this->viewVars['block']->block_data['animation_delay'])) {
+            $classes .= $this->viewVars['block']->block_data['animation_delay'];
+        }
+
+        return $classes;
+    }
+    
+    /**
      * Executed before rendering the admin preview of the widget. Can be used to set
      * view vars for the admin_preview template.
      *

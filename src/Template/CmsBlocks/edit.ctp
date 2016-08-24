@@ -4,7 +4,6 @@ if (!$this->request->is('ajax')) {
     $this->TinyMce->includeAssets();
 }
 ?>
-
 <?= $this->Form->create($cmsBlock, [
     'class' => 'dialog-ajax-form dialog-ajax-form-close-on-success',
     'novalidate'
@@ -16,6 +15,7 @@ if (!$this->request->is('ajax')) {
     </h4>
 </div>
 <div class="modal-body">
+    <?= $this->element('CmsBlocks/animation_selector') ?>
     <div class="block-admin-form">
         <?= $this->CmsAdmin->renderBlockAdminForm($cmsBlock) ?>
     </div>
