@@ -2,10 +2,14 @@
 use Cake\Core\Configure;
 
 $animationOptions = Configure::read('Cms.BlockAnimations');
+$animation = '';
 $animateOnce = true;
 $animationSpeed = '';
 $animationDelay = '';
 
+if(isset($widget->viewVars['block']->block_data['animation'])) {
+    $animation = $widget->viewVars['block']->block_data['animation'];
+}
 if(isset($widget->viewVars['block']->block_data['animate_once'])) {
     $animateOnce = $widget->viewVars['block']->block_data['animate_once'];
 }
@@ -15,7 +19,6 @@ if(isset($widget->viewVars['block']->block_data['animation_speed'])) {
 if(isset($widget->viewVars['block']->block_data['animation_delay'])) {
     $animationDelay = $widget->viewVars['block']->block_data['animation_delay'];
 }
-$animation = $widget->viewVars['block']->block_data['animation'];
 
 if($animationOptions != false) {
     echo $this->Form->input('block_data.animation', [
