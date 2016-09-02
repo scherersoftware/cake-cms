@@ -14,7 +14,7 @@ class SlugRoute extends Route
      * @param string $url URL
      * @return array|false
      */
-    public function parse($url)
+    public function parse($url, $method = '')
     {
         $PagesModel = TableRegistry::get('Cms.CmsPages');
         if ($pageId = $PagesModel->findPageIdBySlug($url)) {
