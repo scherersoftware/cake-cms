@@ -17,6 +17,9 @@ $this->assign('title', __d('cms', 'cms_pages.add'));
 <?= $this->Form->input('slug', [
     'label' => __d('cms', 'cms_page.slug')
 ]) ?>
+<?= $this->Form->input('description', [
+    'label' => __d('cms', 'cms_page.description')
+]) ?>
 
 
 <?= $this->CkTools->formButtons() ?>

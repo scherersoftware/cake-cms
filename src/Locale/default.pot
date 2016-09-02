@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-10-08 09:53+0200\n"
+"POT-Creation-Date: 2016-09-02 14:38+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,38 +14,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: Controller/CmsBlocksController.php:35;61
-#: Controller/CmsPagesController.php:42;64
-#: Controller/CmsRowsController.php:27
+#: /Users/cleptric/Sites/cakephp-app-template//Controller/CmsBlocksController.php:35;61
+#: /Users/cleptric/Sites/cakephp-app-template//Controller/CmsPagesController.php:65;87
+#: /Users/cleptric/Sites/cakephp-app-template//Controller/CmsRowsController.php:27
 msgid "forms.data_not_saved"
 msgstr ""
 
-#: Controller/CmsPagesController.php:39;62
+#: /Users/cleptric/Sites/cakephp-app-template//Controller/CmsPagesController.php:62;85
 msgid "forms.data_saved"
 msgstr ""
 
-#: Widget/Image/Template/admin_form.ctp:2
-#: Widget/Image/Template/admin_preview.ctp:11
+#: /Users/cleptric/Sites/cakephp-app-template//Template/CmsPages/index.ctp:18
+msgid "cms_pages.search"
+msgstr ""
+
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_form.ctp:2
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_preview.ctp:11
 msgid "cms.image"
 msgstr ""
 
-#: Widget/Image/Template/admin_form.ctp:11
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_form.ctp:11
 msgid "cms.layout"
 msgstr ""
 
-#: Widget/Image/Template/admin_form.ctp:17
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_form.ctp:17
 msgid "cms.height"
 msgstr ""
 
-#: Widget/Image/Template/admin_form.ctp:23
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_form.ctp:23
 msgid "cms.width"
 msgstr ""
 
-#: Widget/Image/Template/admin_form.ctp:29
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_form.ctp:29
 msgid "cms.glide_proportionally_resize_info"
 msgstr ""
 
-#: Widget/Image/Template/admin_preview.ctp:11
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_preview.ctp:11
 msgid "block_data.layout"
 msgstr ""
 

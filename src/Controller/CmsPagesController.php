@@ -14,6 +14,28 @@ class CmsPagesController extends AppController
     ];
 
     /**
+     * Provides ListFilter configuration
+     *
+     * @return array
+     */
+    public function getListFilters()
+    {
+        $filters = [];
+        if ($this->request->action == 'index') {
+            $filters['fields'] = [
+                'CmsPages.fulltext_search' => [
+                    'searchType' => 'fulltext',
+                    'searchFields' => [
+                        'CmsPages.name',
+                        'CmsPages.slug'
+                    ]
+                ]
+            ];
+        }
+        return $filters;
+    }
+
+    /**
      * List CMS Pages
      *
      * @return void

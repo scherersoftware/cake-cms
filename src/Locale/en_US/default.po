@@ -4,48 +4,54 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-10-02 12:37+0200\n"
-"PO-Revision-Date: 2015-10-02 12:38+0200\n"
+"POT-Creation-Date: 2016-09-02 16:40+0200\n"
+"PO-Revision-Date: 2016-09-02 16:41+0200\n"
+"Last-Translator: Felix Kempf <fk@codekanzlei.de>\n"
 "Language-Team: EMAIL@ADDRESS\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.5\n"
-"Last-Translator: Felix Kempf <fk@codekanzlei.de>\n"
-"Language: en\n"
+"X-Generator: Poedit 1.8.8\n"
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Controller/CmsBlocksController.php:35;61
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Controller/CmsPagesController.php:42;64
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Controller/CmsRowsController.php:27
+#: /Users/cleptric/Sites/cakephp-app-template//Controller/CmsBlocksController.php:35;61
+#: /Users/cleptric/Sites/cakephp-app-template//Controller/CmsPagesController.php:65;87
+#: /Users/cleptric/Sites/cakephp-app-template//Controller/CmsRowsController.php:27
 msgid "forms.data_not_saved"
 msgstr "Data not saved"
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Controller/CmsPagesController.php:39;62
+#: /Users/cleptric/Sites/cakephp-app-template//Controller/CmsPagesController.php:62;85
 msgid "forms.data_saved"
 msgstr "Data saved"
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_form.ctp:2
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_preview.ctp:11
+#: /Users/cleptric/Sites/cakephp-app-template//Template/CmsPages/index.ctp:18
+msgid "cms_pages.search"
+msgstr "Search for name or slug"
+
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_form.ctp:2
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_preview.ctp:11
 msgid "cms.image"
 msgstr "Image"
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_form.ctp:11
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_form.ctp:11
 msgid "cms.layout"
 msgstr "Layout"
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_form.ctp:17
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_form.ctp:17
 msgid "cms.height"
 msgstr "Height"
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_form.ctp:23
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_form.ctp:23
 msgid "cms.width"
 msgstr "Width"
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_form.ctp:29
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_form.ctp:29
 msgid "cms.glide_proportionally_resize_info"
-msgstr "Glide will resize the image porportionally. If both values are given, it takes the one which will shrink the image more."
+msgstr ""
+"Glide will resize the image porportionally. If both values are given, it "
+"takes the one which will shrink the image more."
 
-#: /Users/flix/Sites/codekanzlei/l4b_backend/Widget/Image/Template/admin_preview.ctp:11
+#: /Users/cleptric/Sites/cakephp-app-template//Widget/Image/Template/admin_preview.ctp:11
 msgid "block_data.layout"
 msgstr "Layout"
