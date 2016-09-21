@@ -10,7 +10,8 @@
         "cakephp/plugin-installer": "*",
         "codekanzlei/cake-cktools": "*",
         "codekanzlei/cake-frontend-bridge": "*",
-        "codekanzlei/cake-attachments": "*"
+        "codekanzlei/cake-attachments": "*",
+        "codekanzlei/cake-model-history": "*"
     },
     "require-dev": {
         "cakephp/cakephp": "~3.0"

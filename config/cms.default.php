@@ -11,7 +11,8 @@ return [
         ],
         'Administration' => [
             'layout' => 'default',
-            'helpers' => []
+            'helpers' => [],
+            'useModelHistory' => false
         ],
         'Widgets' => [
             // if false the list will be compiled dynamically

@@ -2,6 +2,7 @@
 namespace Cms\Model\Table;
 
 use ArrayObject;
+use Cake\Core\Configure;
 use Cake\Database\Expression\QueryExpression;
 use Cake\Event\Event;
 use Cake\ORM\Query;
@@ -48,6 +49,16 @@ class CmsRowsTable extends Table
             'className' => 'Cms.CmsBlocks',
             'dependent' => true
         ]);
+
+        if (Configure::read('Cms.Administration.useModelHistory')) {
+            $this->addBehavior('ModelHistory.Historizable', [
+                'userNameFields' => [
+                    'firstname' => 'forename',
+                    'lastname' => 'surname',
+                    'id' => 'Users.id'
+                ]
+            ]);
+        }
     }
 
     /**

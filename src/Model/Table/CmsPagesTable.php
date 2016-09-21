@@ -1,6 +1,7 @@
 <?php
 namespace Cms\Model\Table;
 
+use Cake\Core\Configure;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
@@ -33,6 +34,16 @@ class CmsPagesTable extends Table
             'foreignKey' => 'cms_page_id',
             'className' => 'Cms.CmsRows'
         ]);
+
+        if (Configure::read('Cms.Administration.useModelHistory')) {
+            $this->addBehavior('ModelHistory.Historizable', [
+                'userNameFields' => [
+                    'firstname' => 'forename',
+                    'lastname' => 'surname',
+                    'id' => 'Users.id'
+                ]
+            ]);
+        }
 
         $this->schema()->columnType('page_attributes', 'json');
     }

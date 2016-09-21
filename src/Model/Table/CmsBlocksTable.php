@@ -3,6 +3,7 @@ namespace Cms\Model\Table;
 
 use ArrayObject;
 use Cake\Collection\Collection;
+use Cake\Core\Configure;
 use Cake\Database\Expression\QueryExpression;
 use Cake\Event\Event;
 use Cake\ORM\Query;
@@ -43,6 +44,16 @@ class CmsBlocksTable extends Table
             'foreignKey' => 'cms_row_id',
             'className' => 'Cms.CmsRows'
         ]);
+
+        if (Configure::read('Cms.Administration.useModelHistory')) {
+            $this->addBehavior('ModelHistory.Historizable', [
+                'userNameFields' => [
+                    'firstname' => 'forename',
+                    'lastname' => 'surname',
+                    'id' => 'Users.id'
+                ]
+            ]);
+        }
 
         $this->schema()->columnType('block_data', 'json');
     }

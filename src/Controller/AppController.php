@@ -5,6 +5,7 @@ namespace Cms\Controller;
 use App\Controller\AppController as BaseController;
 use Cake\Core\Configure;
 use Cake\Event\Event;
+use Cake\ORM\TableRegistry;
 use Cake\Utility\Hash;
 
 class AppController extends BaseController
@@ -25,6 +26,20 @@ class AppController extends BaseController
     public function initialize()
     {
         $this->loadComponent('Cms.Cms');
+
+        if (Configure::read('Cms.Administration.useModelHistory')) {
+            $modelsWithModelHistory = [
+                'Cms.CmsBlocks',
+                'Cms.CmsPages',
+                'Cms.CmsRows'
+            ];
+            foreach ($modelsWithModelHistory as $modelName) {
+                TableRegistry::get($modelName)->setModelHistoryUserIdCallback(function () {
+                    return $this->Auth->user('id');
+                });
+            }
+        }
+
         parent::initialize();
     }
 
