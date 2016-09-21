@@ -53,6 +53,9 @@ class CmsBlocksController extends AppController
     {
         $cmsBlock = $this->CmsBlocks->get($id);
         $widget = WidgetFactory::factory($cmsBlock);
+        if ($widget->getFullIdentifier() == 'App.FileDownload') {
+            $this->eventManager()->off($this->Csrf);
+        }
         if ($this->request->is(['patch', 'post', 'put'])) {
             $cmsBlock = $this->CmsBlocks->patchEntity($cmsBlock, $this->request->data);
             if ($this->CmsBlocks->save($cmsBlock)) {
