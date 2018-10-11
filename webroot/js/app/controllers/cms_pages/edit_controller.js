@@ -107,9 +107,11 @@ App.Controllers.CmsPagesEditController = Frontend.AppController.extend({
             action: 'edit',
             pass: [blockId]
         };
-        this.openDialog(url, function onClose() {
-            this.refreshPage();
-        }.bind(this));
+        App.Main.Dialog.loadDialog(url,  {
+            onDialogClose: function() {
+                this.refreshPage();
+            }.bind(this)
+        });
     },
     onAddRow: function() {
         var url = {
@@ -118,9 +120,11 @@ App.Controllers.CmsPagesEditController = Frontend.AppController.extend({
             action: 'add',
             pass: [this.getVar('pageId')]
         };
-        this.openDialog(url, function onClose() {
-            this.refreshPage();
-        }.bind(this));
+        App.Main.Dialog.loadDialog(url,  {
+            onDialogClose: function() {
+                this.refreshPage();
+            }.bind(this)
+        });
         return false;
     },
     onDeleteBlock: function(blockId) {
@@ -152,9 +156,12 @@ App.Controllers.CmsPagesEditController = Frontend.AppController.extend({
             action: 'add',
             pass: [rowId, columnIndex]
         };
-        this.openDialog(url, function onClose(arg) {
-            console.log(arg);
-        }.bind(this));
+
+        App.Main.Dialog.loadDialog(url,  {
+            onDialogClose: function(arg) {
+                console.log(arg);
+            }.bind(this)
+        });
         return false;
     },
     refreshPage: function() {

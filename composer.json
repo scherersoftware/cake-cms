@@ -8,8 +8,8 @@
     },
     "require": {
         "cakephp/plugin-installer": "*",
-        "codekanzlei/cake-cktools": "*",
-        "codekanzlei/cake-frontend-bridge": "*",
+        "codekanzlei/cake-cktools": "2.*",
+        "codekanzlei/cake-frontend-bridge": "v2.0.0-rc3 as 1.4.11",
         "codekanzlei/cake-attachments": "*",
         "codekanzlei/cake-model-history": "*"
     },
